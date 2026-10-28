@@ -1,0 +1,142 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>不是放视频，而是实时造世界：Google Genie 4 到底是什么？</title><meta property="og:title" content="不是放视频，而是实时造世界：Google Genie 4 到底是什么？">
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#ededed;color:#333;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:677px;margin:0 auto;background:#fff;padding:22px 18px 40px;min-height:100vh}
+.hd h1{font-size:22px;line-height:1.4;color:#111;margin:6px 0 12px;font-weight:700;letter-spacing:.3px}
+.draft{display:inline-block;font-size:12px;color:#b26b00;background:#fff4e0;border-radius:3px;padding:2px 8px}
+.meta{font-size:15px;color:#999;margin-bottom:14px}.meta span{margin-right:12px}.meta .author{color:#576b95}
+.alts{font-size:14px;color:#666;background:#f7f7f7;border-radius:6px;padding:8px 12px;margin-bottom:22px}
+.alts summary{cursor:pointer;color:#576b95}.alts ol{margin:8px 0 2px;padding-left:20px;line-height:1.7}
+article{font-size:17px;line-height:1.85;letter-spacing:.5px;text-align:justify;word-break:break-word}
+article p{margin:0 0 1.15em}
+article h2{font-size:19px;line-height:1.5;color:#111;margin:2em 0 1em;padding-left:10px;border-left:4px solid #1a73e8}
+article h3{font-size:17px;color:#1a73e8;margin:1.6em 0 .6em}
+article strong{color:#1a73e8;font-weight:600}
+article hr{border:0;height:1px;background:#eee;margin:2em 0}
+article ul,article ol{padding-left:1.3em;margin:0 0 1.15em}article li{margin:.3em 0}
+article blockquote{margin:1.2em 0;padding:10px 14px;background:#f7f7f7;border-left:3px solid #ccc;color:#666;font-size:14px;line-height:1.7}
+article blockquote p{margin:0}
+figure{margin:1.4em -2px 1.6em}
+figure img,figure video{display:block;width:100%;height:auto;border-radius:4px;background:#f3f3f3}
+figure video{aspect-ratio:16/9;object-fit:contain;background:#000}
+figcaption{font-size:13px;line-height:1.6;color:#888;text-align:center;margin-top:8px;padding:0 6px;letter-spacing:.2px}
+figcaption .sep{color:#ccc}
+figcaption .full{display:block;margin-top:4px;color:#576b95;text-decoration:none}
+a{color:#576b95;word-break:break-all}
+code{font-size:13px;background:#f5f5f5;padding:1px 4px;border-radius:3px}
+.ft{margin-top:36px;padding-top:14px;border-top:1px solid #eee;font-size:12px;color:#aaa;text-align:center}
+@media (min-width:700px){body{padding:24px 0}.wrap{border-radius:6px;padding:36px 40px 48px}}
+</style></head><body><main class="wrap">
+<header class="hd"><div class="draft">草稿预览 · 未正式发布</div><h1>不是放视频，而是实时造世界：Google Genie 4 到底是什么？</h1>
+<div class="meta"><span class="author">科普 · AI</span><span>2026年10月28日</span></div>
+<details class="alts"><summary>备选标题（3 个）</summary><ol><li>能随口改天气、角色会接话：大白话讲清 DeepMind 的世界模型 Genie 4</li><li>AI 视频之后是“AI 世界”？一文看懂 Genie 4 和它的局限</li><li>给 AI 一个“大脑”和“摄影棚”：Genie 4 与世界模型入门</li></ol></details></header>
+<article><p>想象一下：你站在一条洒满夕阳的陌生小巷前。  </p>
+<p>你在输入框里写下：“天阴下来，下点小雨。”  </p>
+<p>眼前的天色随即暗下来，没有剪辑跳转，细密的水珠落在石板上发出声响。你接着写：“让前面走来一个打伞的路人。”一个路人转过街角走过来；你开口说话，对方也能接话。  </p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/v02_hot_air_balloon_realtime_edit.jpg" aria-label="官方演示：南极上空的热气球场景，右上角是运行中输入的文字指令"><source src="media/loop/v02_hot_air_balloon_realtime_edit.mp4" type="video/mp4"></video><figcaption>官方演示：南极上空的热气球场景，右上角是运行中输入的文字指令<span class="sep">｜</span>视频来源：Google DeepMind 博客 Genie 4 官方演示<a class="full" href="media/full/v02_hot_air_balloon_realtime_edit.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<p>这不是提前录好的视频，也不是游戏团队写代码搭出的 3D 场景。上面是我虚构的画面，但<strong>这正是 Google DeepMind 新模型想做到的事</strong>。  </p>
+<p>北京时间 2026 年 10 月 28 日凌晨，Google DeepMind 正式公布了交互式世界模型 Genie 4。  </p>
+<p>Google CEO Sundar Pichai 与 DeepMind CEO Demis Hassabis 都在 X 上发帖介绍了这一进展。  </p>
+<p>截至 10 月 28 日晚的公开数据（数据会变化），DeepMind 官宣推文有约 270 万次浏览和 2 万多个赞。  </p>
+<figure><img src="img/gdm_2115114028338962672.png" alt="Google DeepMind 在 X 上发布 Genie 4" loading="lazy"><figcaption>Google DeepMind 在 X 上发布 Genie 4<span class="sep">｜</span>图：@GoogleDeepMind 官方推文截图，2026-10-28 00:10（UTC+8）</figcaption></figure>
+
+<p>既然已有不少 AI 视频生成工具，这个被称为“世界模型”的技术，差异到底在哪里？  </p>
+<hr />
+<h2>视频生成与世界模型：单向播放 vs 实时回应</h2>
+<p>理解 Genie 4，可以先对比常见的 AI 视频。  </p>
+<p>现在的视频生成工具就像一台投影仪。输入提示词后等待片刻，它交给你一段成片。  </p>
+<p>这段内容是固定的。播放时你无法控制视角走动，不能中途让天气放晴，里面的角色也不会停下来回话。它是单向的静态输出。  </p>
+<p>世界模型（World Model）则是在电脑里实时跑一个环境：你做出动作，它继续往下演。  </p>
+<p>在 Genie 4 的演示里，你能用键盘移动视角，也能随时输入文字改变环境：切换天气、移动镜头、加入物体，或与角色对话。  </p>
+<p><strong>它是双向的实时交互。</strong>系统会根据你的操作，实时计算接下来应该出现什么。</p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/v07_magician_first_person.jpg" aria-label="官方演示：第一人称“魔术师”场景，左下角是键盘方向键，右上角是文字指令"><source src="media/loop/v07_magician_first_person.mp4" type="video/mp4"></video><figcaption>官方演示：第一人称“魔术师”场景，左下角是键盘方向键，右上角是文字指令<span class="sep">｜</span>视频来源：Google DeepMind 博客 Genie 4 官方演示<a class="full" href="media/full/v07_magician_first_person.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<hr />
+<h2>幕后分工：“导演的大脑”与“造梦的摄影棚”</h2>
+<p>这样一个虚拟环境由一套协同体系搭建完成。  </p>
+<p>工作流程类似导演与摄影棚的配合：  </p>
+<p>Genie 4 负责感官呈现，把画面画出来并配上声音。它是 DeepMind 第一个原生生成音频的实时世界模型，海浪、风声和角色交谈与画面同步生成。  </p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/v03_motorcycle_audio.jpg" aria-label="官方演示：“1995 年香港、35mm 胶片质感”的摩托车场景，原视频带同步生成的环境声和对白"><source src="media/loop/v03_motorcycle_audio.mp4" type="video/mp4"></video><figcaption>官方演示：“1995 年香港、35mm 胶片质感”的摩托车场景，原视频带同步生成的环境声和对白<span class="sep">｜</span>视频来源：Google DeepMind 博客 Genie 4 官方演示<a class="full" href="media/full/v03_motorcycle_audio.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<p>Gemini 负责思考与规划。Gemini Omni 负责让画面的外观和表现贴近现实；Gemini 3.8 Flash 负责持续观察场景、拆解步骤，并检查新画面是否落实了每一步。  </p>
+<p>Google AI 官方账号提到，<strong>Gemini 是模拟的“大脑”</strong>，把要求转成动作、规划事件、跟踪场景进展，并在修改设定时调整。  </p>
+<figure><img src="img/googleai_2115114625985368299.png" alt="Google AI 官方账号介绍 Genie 4，全文提到 Gemini 是模拟的“大脑”（截图中被“Show more”折叠）" loading="lazy"><figcaption>Google AI 官方账号介绍 Genie 4，全文提到 Gemini 是模拟的“大脑”（截图中被“Show more”折叠）<span class="sep">｜</span>图：@GoogleAI 推文截图，2026-10-28 00:13（UTC+8）</figcaption></figure>
+
+<p>在机器人实验中，10 月 13 日刚全面开放的 Gemini 4 Argon 承担了大脑角色：它将指令拆解成步骤，以文字形式实时交给 Genie 4 渲染。  </p>
+<p>当然，这个比喻不完全准确。现实中的摄影棚有人工搭建的布景，导演也是人类。世界模型里的剧本和画面都是 AI 实时算出来的，具体延迟与分辨率官方并未公布。  </p>
+<p>这里的场景没有实体砖瓦，按世界模型的一般思路，物理表现来自模型从数据里学到的近似规律，而不是物理引擎里写死的公式。  </p>
+<p>根据 TechCrunch 和 The Verge 的报道（官方博客未写这个数字），Genie 4 单个场景保持一致性的时长约 2 分钟，约为 Genie 3（约 1 分钟）的两倍。  </p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/v04_genie3_vs_genie4.jpg" aria-label="官方对比：Genie 3（左）与 Genie 4（右）"><source src="media/loop/v04_genie3_vs_genie4.mp4" type="video/mp4"></video><figcaption>官方对比：Genie 3（左）与 Genie 4（右）<span class="sep">｜</span>视频来源：Google DeepMind 博客；“约 2 分钟、两倍”出自 TechCrunch、The Verge 报道<a class="full" href="media/full/v04_genie3_vs_genie4.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<hr />
+<h2>官方演示里，受信测试者正在怎么用？</h2>
+<p>Genie 4 处于研究预览阶段，目前只对少数受信测试者开放。官方披露了几个具体案例：  </p>
+<h3>1. 影视分镜的“草稿模式”</h3>
+<p>过去做动态预览，往往要先搭三维场景或画分镜。在测试中，创意人员把 Genie 4 当作预可视化的草稿本。导演可以进入实时模拟的场景，调整机位、灯光和角色对白，录制多个镜头。  </p>
+<h3>2. 让老照片“活”过来</h3>
+<p>有摄影记者把一张 2D 历史档案照片，在几秒内转成可走动的模拟环境。也有测试者用它模拟山洪、野火这类短时间内发生的环境变化。  </p>
+<h3>3. 游戏开发的“零代码原型”</h3>
+<p>游戏开发者在写一行引擎代码之前，就能用自然语言把构思变成可探索的原型。  </p>
+<h3>4. 机器人的“虚拟驾校”</h3>
+<p>机器人直接在真实世界试错成本很高。  </p>
+<p>演示中，Gemini 4 Argon 负责拆解任务，Genie 4 实时渲染，模拟了人形机器人（Apptronik 的 Apollo）下跳棋的过程。  </p>
+<p>TechCrunch 认为这展示了一种路径：机器人的场景先在模拟中测试，再进入真实世界操作。DeepMind 提到，SIMA 这类智能体可以在 Genie 生成的世界里学习技能。  </p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/v06_robotics_checkers.jpg" aria-label="官方演示：左边是 Gemini 4 Argon 写出的步骤，右边是 Genie 4 模拟的 Apollo 机器人下跳棋"><source src="media/loop/v06_robotics_checkers.mp4" type="video/mp4"></video><figcaption>官方演示：左边是 Gemini 4 Argon 写出的步骤，右边是 Genie 4 模拟的 Apollo 机器人下跳棋<span class="sep">｜</span>视频来源：Google DeepMind 博客 Genie 4 官方演示<a class="full" href="media/full/v06_robotics_checkers.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<p>Argon 本身也能构建环境，方式是编写代码和调用工具。DeepMind 的两个官方演示中，Argon 把三个开源数据集组合成可交互的 3D 人体解剖模型，支持分层查看、单独看某块肌肉，或放大到跳动的心脏里。  </p>
+<p>另一个是用单张 Nano Banana 图片配合 Blender MCP，在 Antigravity 中搭建 3D 哥特式大教堂，调整几何、纹理和光照。  </p>
+<p><strong>这两项演示与 Genie 4 路径不同：</strong>Argon 输出可编辑的代码与 3D 模型，Genie 4 输出实时生成的音视频。DeepMind 提出的“混合世界模型”旨在结合这两种能力。  </p>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="media/poster/x_argon_anatomy.jpg" aria-label="官方演示：Gemini 4 Argon 组合三个开源数据集做出的 3D 人体解剖可视化"><source src="media/loop/x_argon_anatomy.mp4" type="video/mp4"></video><figcaption>官方演示：Gemini 4 Argon 组合三个开源数据集做出的 3D 人体解剖可视化<span class="sep">｜</span>视频来源：@GoogleDeepMind 推文，2026-10-22 02:30（UTC+8）<a class="full" href="media/full/x_argon_anatomy.mp4" target="_blank">▶ 观看完整原片（带声音）</a></figcaption></figure>
+
+<figure><img src="img/gdm_cathedral_2113645959762575623.png" alt="Gemini 4 Argon 用一张 Nano Banana 图片和 Blender MCP 搭出的 3D 哥特式大教堂" loading="lazy"><figcaption>Gemini 4 Argon 用一张 Nano Banana 图片和 Blender MCP 搭出的 3D 哥特式大教堂<span class="sep">｜</span>图：@GoogleDeepMind 推文截图，2026-10-23 22:57（UTC+8）</figcaption></figure>
+
+<hr />
+<h2>坦白讲，它现在还不完美</h2>
+<p>DeepMind 在官方博客中列出了 Genie 4 当前的技术局限：  </p>
+<ol>
+<li>细节漂移与物体恒存问题：在场景中移动时间过长或提示词过于复杂时，视觉细节会变形，比如转一圈回来同一把椅子外观可能发生改变。  </li>
+<li>复杂物理和声音准度有限：复杂物理交互和实时音频的准确度，官方仍列为在研方向。  </li>
+<li>空间与文字处理仍有难度：空间准确性尚在攻关；生成清晰文字通常需要在描述中写明；多角色与用户、环境之间的复杂互动仍是挑战。  </li>
+<li>无法还原真实地点：官方说明它无法精确模拟现实中的真实地点。  </li>
+</ol>
+<figure><img src="img/blog_limitations.png" alt="官方博客“Understanding current limitations”原文" loading="lazy"><figcaption>官方博客“Understanding current limitations”原文<span class="sep">｜</span>图：Google DeepMind 博客页面截图</figcaption></figure>
+
+<p>DeepMind 工程师 Diego Rivas 表示，该技术仍处早期，端到端的产品形态还在探索中。  </p>
+<hr />
+<h2>普通人现在能做什么？</h2>
+<p>围绕这项技术，当前的实际情况和预期如下：  </p>
+<p><strong>可以关注的方面：</strong>
+- 排队申请：Project Genie 已开放候补名单（waitlist）。官方表示“即将”（coming soon）向 Google AI Ultra 订阅用户（Project Genie）以及 Gemini API 和 AI Studio 的早期合作方开放；“未来几周”是 TechCrunch 的说法，官方尚未公布具体日期。  </p>
+<figure><img src="img/blog_next_steps.png" alt="官方“Next steps for Genie 4”：先研究预览，再向 Ultra 订阅者和 API/AI Studio 早期合作方开放" loading="lazy"><figcaption>官方“Next steps for Genie 4”：先研究预览，再向 Ultra 订阅者和 API/AI Studio 早期合作方开放<span class="sep">｜</span>图：Google DeepMind 博客页面截图</figcaption></figure>
+
+<ul>
+<li>查看官方演示：DeepMind 博客和官方 X 账号发布了演示视频。演示片段经过官方挑选，不完全代表日常使用效果。  </li>
+<li>辨别标识：DeepMind 提到，Genie 4 生成的画面和音频都会嵌入 SynthID 不可见数字水印。  </li>
+</ul>
+<p><strong>目前做不到的事实：</strong>
+- 普通用户尚无法使用：目前仅受信测试者可用。The Verge 记者表示自己也未测试过（仅一家媒体提及）。<br />
+- 定价官方尚未公布：API 收费标准以及 Ultra 订阅是否需额外付费均未说明。<br />
+- 地区可用性未提及：官方资料未提及是否对中国大陆用户开放。  </p>
+<hr />
+<p>从观看固定的 AI 视频，到进入环境并实时互动，世界模型展示了动态模拟的新方向。Demis Hassabis 在 X 上写道：“模拟中的模拟，让人好奇这个兔子洞到底有多深……”  </p>
+<figure><img src="img/hassabis_2115232001275924722.png" alt="Demis Hassabis 的发帖" loading="lazy"><figcaption>Demis Hassabis 的发帖<span class="sep">｜</span>图：@demishassabis 推文截图，2026-10-28 07:59（UTC+8）</figcaption></figure>
+
+<p>如果有一天你也能走进这样一个世界，你输入的第一句指令会是什么？是回到某张老照片里的街道，还是看一场下雨的古城？<strong>留言告诉我。</strong></p>
+<hr />
+<p><strong>参考来源</strong></p>
+<ul>
+<li>Google DeepMind 博客《Genie 4: A new generation of world simulation》，2026-10-27：<a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank" rel="noopener">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</a></li>
+<li>Google 官方博客 The Keyword：<a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/" target="_blank" rel="noopener">https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/</a></li>
+<li>Google 官方博客《Gemini 4 Argon is now available for everyone》，2026-10-13：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" target="_blank" rel="noopener">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/</a></li>
+<li>TechCrunch，2026-10-27：<a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/" target="_blank" rel="noopener">https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/</a></li>
+<li>The Verge，2026-10-27：<a href="https://www.theverge.com/tech/1019076/google-genie-4-ai-model" target="_blank" rel="noopener">https://www.theverge.com/tech/1019076/google-genie-4-ai-model</a></li>
+<li>X：@GoogleDeepMind（2115114028338962672、2112974723659247896、2113645959762575623）、@GoogleAI（2115114625985368299）、@sundarpichai（2115115252690145519）、@demishassabis（2115232001275924722）</li>
+</ul>
+<blockquote>
+<p>版权说明：文中图片、动图与视频均来自 Google / Google DeepMind 官方发布素材，或公开 X 帖子的截图，已逐一注明来源，仅用于科普介绍与评论。X 数据为 2026-10-28 晚（UTC+8）读取，会变化。</p>
+</blockquote></article>
+<footer class="ft">本页为公众号文章排版预览草稿，素材版权归原作者所有。</footer></main></body></html>
