@@ -1,0 +1,261 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>一人药企、3.5万个分子与小鼠实验：Anthropic下场做药，究竟改变了什么？</title>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#ededed;color:#333;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:677px;margin:0 auto;background:#fff;padding:22px 18px 40px;min-height:100vh}
+.hd h1{font-size:22px;line-height:1.4;color:#111;margin:6px 0 12px;font-weight:700;letter-spacing:.3px}
+.draft{display:inline-block;font-size:12px;color:#b26b00;background:#fff4e0;border-radius:3px;padding:2px 8px}
+.meta{font-size:15px;color:#999;margin-bottom:14px}.meta span{margin-right:12px}.meta .author{color:#576b95}
+.alts{font-size:14px;color:#666;background:#f7f7f7;border-radius:6px;padding:8px 12px;margin-bottom:22px}
+.alts summary{cursor:pointer;color:#576b95}.alts ol{margin:8px 0 2px;padding-left:20px;line-height:1.7}
+article{font-size:17px;line-height:1.85;letter-spacing:.5px;text-align:justify;word-break:break-word}
+article p{margin:0 0 1.15em}
+article h2{font-size:19px;line-height:1.5;color:#111;margin:2em 0 1em;padding-left:10px;border-left:4px solid #1a73e8}
+article h3{font-size:17px;color:#1a73e8;margin:1.6em 0 .6em}
+article strong{color:#1a73e8;font-weight:600}
+article hr{border:0;height:1px;background:#eee;margin:2em 0}
+article ul,article ol{padding-left:1.3em;margin:0 0 1.15em}article li{margin:.3em 0}
+article blockquote{margin:1.2em 0;padding:10px 14px;background:#f7f7f7;border-left:3px solid #ccc;color:#666;font-size:14px;line-height:1.7}
+article blockquote p{margin:0}
+figure{margin:1.4em -2px 1.6em}
+figure img,figure video{display:block;width:100%;height:auto;border-radius:4px;background:#f3f3f3}
+figure video{aspect-ratio:16/9;object-fit:contain;background:#000}
+figcaption{font-size:13px;line-height:1.6;color:#888;text-align:center;margin-top:8px;padding:0 6px;letter-spacing:.2px}
+figcaption .sep{color:#ccc}
+figcaption .full{display:block;margin-top:4px;color:#576b95;text-decoration:none}
+a{color:#576b95;word-break:break-all}
+code{font-size:13px;background:#f5f5f5;padding:1px 4px;border-radius:3px}
+.ft{margin-top:36px;padding-top:14px;border-top:1px solid #eee;font-size:12px;color:#aaa;text-align:center}
+@media (min-width:700px){body{padding:24px 0}.wrap{border-radius:6px;padding:36px 40px 48px}}
+figure .trans{margin:10px 2px 0;padding:10px 12px;background:#f6f7f9;border-left:3px solid #1a73e8;border-radius:4px;font-size:14px;line-height:1.75;color:#555;text-align:left;letter-spacing:.2px}
+figure .trans b{color:#1a73e8;font-weight:600}
+</style></head><body><main class="wrap">
+<header class="hd"><div class="draft">草稿预览 · 未正式发布</div><h1>一人药企、3.5万个分子与小鼠实验：Anthropic下场做药，究竟改变了什么？</h1>
+<div class="meta"><span class="author">咨询 · AI × 新药</span><span>2026年10月29日</span></div>
+<details class="alts"><summary>备选标题（2 个）</summary><ol><li>收购一人药企、联手六大机构：拆解 Anthropic 进军新药研发的真实进展与边界</li><li>从 18 个月到小鼠实验：Anthropic 与 Claude 真正改变的，是新药研发的组织方式</li></ol></details></header>
+<article><p>只有 1 名全职员工，依靠 8 位付费顾问，协调 11 家外部实验室。</p>
+<p>在不到 18 个月的时间里，这家名为 Mithril Medicine 的微型生物科技公司，把一款针对严重儿童罕见病的候选双抗疗法推进到了小鼠体内实验阶段。</p>
+<p>2026 年 10 月 27 日，大模型公司 Anthropic 宣布了这一系列早期进展，并披露已收购 Mithril。</p>
+<figure><img src="img/anthropic_2115178675050307942.jpg" alt="Anthropic 官方 X 帖，2026-10-28 04:27（UTC+8）" loading="lazy"><figcaption>Anthropic 官方 X 帖，2026-10-28 04:27（UTC+8）<span class="sep">｜</span>来源：x.com/AnthropicAI/status/2115178675050307942</figcaption><div class="trans"><b>中文翻译：</b>过去几个月，Anthropic 的科学家与六家研发新药的机构开展了深度研究合作。我们也开始了自己的药物发现工作。在这个过程中，我们对 Claude 如何支持药物研发的各个环节有了更多了解……（链接卡片）anthropic.com｜用 Claude 加速药物研发的早期进展：过去几个月，我们与六家机构合作，加速攻克疾病。我们也已开始自己的药物发现工作……</div></figure>
+
+<p>这起收购和技术发布在科技界与医药界引起了广泛关注。</p>
+<p>不少人好奇，通用大模型公司直接下场做药，这个行业的操作方式会不会跟着改变。</p>
+<p>我想把故事和数据分开看：Anthropic 这次到底做成了什么，边界又在哪里。</p>
+<hr />
+<h2>一、问题：新药研发为什么又慢又贵，以及这次发布的核心追问</h2>
+<h3>1. 行业老问题：10 年以上、约 10 亿～26 亿美元（估算）、7.9% 的成功率</h3>
+<p>在传统生物医药领域，新药研发长期受困于漫长的时间周期与高额的资金投入。</p>
+<p>在美国，从最初发现疾病靶点到最终新药获批，全流程平均需要 10 到 15 年。</p>
+<p>即便候选药物已经进入 I 期临床试验，到获批平均还要约 10.5 年。</p>
+<figure><img src="img/d2_success.jpg" alt="示意图，作者整理：进入人体试验后各阶段的成功率（2011–2020）" loading="lazy"><figcaption>示意图，作者整理：进入人体试验后各阶段的成功率（2011–2020）<span class="sep">｜</span>数据：BIO/Informa/QLS 2021 报告；DiMasi 2016；Wouters 2020</figcaption><div class="trans"><b>中文翻译：</b>图中英文缩写：BIO＝美国生物技术创新组织；Informa、QLS 为合作的数据与分析机构；JAMA＝《美国医学会杂志》。</div></figure>
+
+<p>关于一款新药的研发成本，业界有多项学术测算，因统计口径不同而有所差异。</p>
+<p>塔夫茨大学的 DiMasi 等学者在 2016 年的研究中测算，每个获批新药的税前资本化研发成本约为 25.58 亿美元（以 2013 年美元计，包含研发期间所有失败项目的沉没成本与资金时间折现），实际净现金支出约为 13.95 亿美元。</p>
+<p>Wouters 等学者 2020 年发表在《美国医学会杂志》（JAMA）上的研究，基于 63 个获批药物测算出资本化投入的中位数为 9.85 亿美元（以 2018 年美元计），其中肿瘤与免疫类药物的中位数高达 27.7 亿美元。</p>
+<p>我认为，这些常被引用的成本数据，主要是行业用极少数成功产品去分摊大量失败管线带来的结果。</p>
+<p>临床转化率偏低是推高成本的关键根源。根据 BIO 等机构统计的 2011 到 2020 年行业数据，从 I 期临床最终推进至获批上市的总体成功率只有 7.9%。</p>
+<p>II 期临床试验（首次在患者身上初步看疗效、摸索剂量的阶段）是最大的瓶颈，通过率仅为 28.9%。</p>
+<p>我的看法是：新药研发真正贵的地方，在于生物系统太复杂、人体试错成本太高；实验室里算得快，只解决了其中一小块。</p>
+<h3>2. 反差：一人公司与 11 家外部实验室</h3>
+<p>在这样高门槛的行业背景下，Anthropic 公布的案例形成了鲜明的反差。</p>
+<p>被收购的 Mithril 只有创始人 Cody Tranbarger 一名全职人员，早期由风投机构 Atlas Venture 孵化，另有 8 位付费顾问。</p>
+<p>Mithril 的实验交给 11 家外部实验室（合同研究组织，即 CRO，专门接受药企委托执行化学合成、动物试验等外包工作的第三方实验机构）执行。</p>
+<p>Cody Tranbarger 借助大语言模型 Claude 编排整个外部研发网络，在不到 18 个月内完成了针对 LAMA2 相关先天性肌营养不良的双抗候选分子设计与小鼠体内给药测试。</p>
+<figure><img src="img/profoak_2115185849424048564.jpg" alt="Mithril 创始人 Cody Tranbarger（@Prof_Oak_）亲自揭晓身份，2026-10-28 04:" loading="lazy"><figcaption>Mithril 创始人 Cody Tranbarger（@Prof_Oak_）亲自揭晓身份，2026-10-28 04:56（UTC+8）<span class="sep">｜</span>来源：x.com/Prof_Oak_/status/2115185849424048564</figcaption><div class="trans"><b>中文翻译：</b>惊喜 1：Anthropic 收购了一家一人生物科技公司。惊喜 2：那个人就是我。惊喜 3：我来跟大家讲讲这件事。没错，就是你想的那样；在 6 年越来越&quot;松散&quot;的匿名之后：大橡树博士身份揭晓帖。……而且没错，事情已经变得如此无聊（显示更多）</div></figure>
+
+<p>据媒体 R&amp;D World 报道，Anthropic 对 Mithril 的收购发生在 2026 年 7 月（待确认），具体交易金额双方均未披露。</p>
+<p>“一个操盘手 + AI 调度 + 外部实验室”的组合，很容易被讲成“超级个体做新药”的故事。</p>
+<p>但我认为，这种反差感很强的叙事容易让人产生误解，必须仔细审视它所处的特定边界条件。</p>
+<h3>3. 这次发布的核心追问：AI 到底在改变什么环节？</h3>
+<p>Anthropic 在官方说明中明确指出：药物研发不存在单一瓶颈，瓶颈分散在寻找靶点、设计分子、生产制造、监管申报和临床试验的整个流程中。</p>
+<p>Anthropic 药物发现与开发研究负责人 Nathan C. Frey 也表示，解决这些瓶颈较好的方式是直接参与真实的药物项目。</p>
+<p>官方也提醒，这些成果大多仍处于临床前阶段。对 Mithril 的候选药物，官方说法是：如果后续测试继续站得住，最快 2028 年底可以开始人体试验。</p>
+<p>这引出了大家关心的核心问题：AI 到底是在生物学层面提升了分子设计的命中率，还是通过大模型的工程能力梳理了繁琐的研发流程？</p>
+<hr />
+<h2>二、分析：六项合作与 Mithril、证据强度、竞争格局</h2>
+<h3>1. 官方公布的六项合作：AI 到底做了什么？</h3>
+<p>Anthropic 官方展示了模型与六家机构及 Mithril 的合作，涉及了药物研发的多项上游环节。</p>
+<figure><img src="img/ncfrey_2115187081219846566.jpg" alt="Anthropic 药物发现与开发研究负责人 Nathan C. Frey，2026-10-28 05:01（UTC+8" loading="lazy"><figcaption>Anthropic 药物发现与开发研究负责人 Nathan C. Frey，2026-10-28 05:01（UTC+8）<span class="sep">｜</span>来源：x.com/nc_frey/status/2115187081219846566</figcaption><div class="trans"><b>中文翻译：</b>找出并解决药物研发瓶颈的最好方法，是深度参与真实的药物项目，覆盖许多不同的治疗领域和研发阶段。过去几个月，我们的科学家开展了深度研究……（显示更多）</div></figure>
+
+<p>在 Mithril 自身项目中，团队针对严重的儿童罕见病 LAMA2 相关先天性肌营养不良（LAMA2-CMD），设计了双特异性桥接抗体。</p>
+<p>在实际执行中，Claude 协助管理了 11 家 CRO；在 1 周内审阅了包含 113 个抗体构建的 341 页生产数据包。</p>
+<p>模型在 2 分 40 秒内给出初步结论，7 分 53 秒完成全部构建的可视化汇总，中位回复时间为 96 秒（相比之下 CRO 的首次中位回复时间为 8.5 小时）。</p>
+<p>它为团队起草了 17 封沟通邮件（人类编辑后发出 12 封），并自动标出 41 个需人工核实确认的无依据点；当人类推翻其全面测动力学的建议后，模型在 4 分钟内重构出 89 个方案的修正计划。</p>
+<p>在食物过敏领域，Divergence Labs 针对 IgE（人体内介导急性过敏反应的关键免疫球蛋白）靶点，借助 Claude 在约 1 个月内基本自主生成了约 3.5 万个抗体设计。</p>
+<figure><img src="img/divergence_fig1_campaign.jpg" alt="Divergence Labs 预印本图 1：Claude 主导的食物过敏抗体设计流程" loading="lazy"><figcaption>Divergence Labs 预印本图 1：Claude 主导的食物过敏抗体设计流程<span class="sep">｜</span>来源：divergencelabs.com/publications/ige-preprint.pdf</figcaption><div class="trans"><b>中文翻译：</b>a 治疗思路与机制——要设计：破坏臂、锚定臂。锚定臂结合受体上的 IgE → 破坏臂撬开 Cε3 → IgE 离开，不发生交联。b Claude 编排的设计流程——目标拆解与策略（文献·机制·建模工具·分阶段计划）；破坏臂重设计：设计、评审、筛选，11,273 个设计 → 提名 91 个；全新锚定臂设计：23,600 个设计 → 提名 57 个；（图标）Claude 执行／Claude 主导、人在回路中。c 动力学表征——竞争性 BLI（破坏臂）：91 个 VHH 中 20 个把 IgE 拆下，其中 3 个比奥马珠单抗更快；标准 BLI（锚定臂）：57 个全新锚定臂中 3 个结合 IgE，KD = 3.4、32.5 和 235 nM。d 迈向治疗用双表位抗体——非人灵长类交叉反应、人源化程度、可开发性、细胞功能与致敏性 → 体内实验。</div></figure>
+
+<p>在细胞疗法领域，Generate Biomedicines 的 6 位科学家使用 Claude Code 重构了 CAR-T 细胞（经基因工程改造能精准识别并杀伤肿瘤细胞的人体 T 淋巴细胞）的胞内结构域。</p>
+<p>效果最好的设计比标准部件短约 70%；在实验室测试中，细胞表面的受体数量约为原来的 10 倍，杀伤肿瘤细胞更有效，免疫细胞保持活跃的时间也更长。</p>
+<p>在先导分子优化环节，BigHat Biosciences 将模型接入实验数据系统，在 10 周内测试了约 1,010 个变体。</p>
+<p>研究人员和模型一起重新分析原始数据，发现常用指标可能有误导，提出了新指标，主要预测得到验证。表现最好的版本结合力强 10 倍以上；癌症先导分子在高 18°C 的温度下仍能保持溶解；长效先导分子的结块速度慢了 100 倍以上。</p>
+<p>在文书审阅与申报领域，Enveda 面临着化学家最多 75% 的时间花在文书上的痛点。</p>
+<p>在处理一份 1,061 页的 CMC（化学、制造与控制，即新药申报中证明药品质量一致性、工艺可控性与生产合规性的核心技术文档）文件时，Claude 找出了人工发现的全部 11 个问题，并另外标出了人工遗漏的 7 个问题，使审阅时间减少了 89%（从 25 小时以上压缩至 3 小时以下）。</p>
+<p>在两份监管文件的起草测试中，一份耗时 4 小时完成（人工通常约需 3 个月），另一份在人工复核中仅发现一处细微错误。</p>
+<p>在靶点发现环节，投资机构 The Column Group（TCG）孵化了新公司 Pleiades，用第一个 Claude skill（靶点评估）评估了 45 个靶点-疾病组合。</p>
+<p>在临床试验设计环节，百时美施贵宝（BMS）高级副总裁 Michael Pourdehnad 表示，借助模型进行试验方案规划与成功概率评估，单次提示词即可生成以往需要团队耗时数天才能完成的初步分析架构。</p>
+<figure><img src="img/d1_pipeline.jpg" alt="示意图，作者整理：新药研发链条中，这次 Claude 参与的环节与证据强度" loading="lazy"><figcaption>示意图，作者整理：新药研发链条中，这次 Claude 参与的环节与证据强度<span class="sep">｜</span>依据：Anthropic 官方博客、Mithril 技术报告、Divergence 预印本</figcaption><div class="trans"><b>中文翻译：</b>图中英文为机构与项目名：TCG＝The Column Group（风投机构），Pleiades 为其新成立的公司；Divergence、Generate、BigHat、Enveda、Mithril 为合作药企；BMS＝百时美施贵宝；CAR-T＝嵌合抗原受体 T 细胞疗法；dyW 为肌营养不良模型小鼠品系。</div></figure>
+
+<p>梳理下来，我认为 AI 在这七个场景中的作用应当按任务属性来区分。</p>
+<p>在 Enveda 的 CMC 文书审阅、Mithril 的外包协同及 BMS 的方案起草中，大模型发挥的是它擅长的长文本理解、信息提取与多源调度能力。</p>
+<p>在 Generate 和 BigHat 的项目里，AI 偏向充当科学家的设计与数据分析助手：前者用 Claude Code 重新设计蛋白部件，后者把 Claude 接入了实验数据系统。</p>
+<h3>2. 证据强度复盘：体外、小鼠还是人体？</h3>
+<p>面对这些数字，我会把不同环节的证据强度分开看。</p>
+<p>在体外结合与功能水平上：</p>
+<p>Divergence 提到的 3.5 万个设计，不能等同于 3.5 万个潜在药物。</p>
+<p>在制药流程中，计算生成的虚拟分子属于初期筛选候选；在体外实验中，团队最终只合成并测试了 91 个破坏臂和 57 个锚定臂。</p>
+<p>实验确认，91 个破坏臂中有 20 个能结合并拆下 IgE（其中 3 个比临床标准药奥马珠单抗更快），57 个锚定臂中仅有 3 个具备结合力（KD 为 3.4 至 235 nM）。</p>
+<p>同时要注意，目前这两只“手”尚未拼接组装成完整的双特异性抗体，也没有进行非人灵长类交叉反应测试及体内药效验证。</p>
+<p>在动物体内实验水平上：</p>
+<p>Mithril 公布的技术报告明确标注为未经同行评审（Not peer reviewed）。</p>
+<figure><img src="img/mithril_fig11_mouse_force.jpg" alt="Mithril 技术报告图 11（未经同行评审）：dyW 小鼠的肌力与握力" loading="lazy"><figcaption>Mithril 技术报告图 11（未经同行评审）：dyW 小鼠的肌力与握力<span class="sep">｜</span>来源：Anthropic 技术报告 PDF</figcaption><div class="trans"><b>中文翻译：</b>A 在每个刺激频率下，2+2 组的力量都超过溶剂组（纵轴：杠杆处力量；1.96 倍，区间 1.49–2.57；曲线：野生型、2+2 100 mg/kg、AAV9 微型 agrin、1+1 CrossMab 72 mg/kg、溶剂对照）。B 2+2 组峰值力量约为溶剂组的两倍（1.95 倍，95% 置信区间 1.51–2.51；阳性对照为溶剂组的 1.31 倍）。C 2+2 组握力也更高（握力/体重，第 4 周与第 6 周；1.94 倍，1.43–2.63）。D 各处理都没有明显改变体重。</div></figure>
+
+<p>在这项针对 dyW 肌营养不良小鼠模型的先导研究中，每组仅有 4 到 7 只小鼠。</p>
+<p>实验数据显示，2+2 构型双抗组的小鼠前肢峰值肌力约为溶剂对照组的 1.95 倍（95% 置信区间 1.51–2.51），握力约为 1.94 倍；而另一种 1+1 构型在测试中没有测到效果；各实验组小鼠的体重均无明显变化。</p>
+<p>该报告也写明了实验存在的局限：小鼠按顺序入组而非随机化入组，同窝小鼠接受同种处理。</p>
+<p>如果按单只小鼠为单位计算，P 值很小（P=0.0001），但按“窝”为统计单位，P 值为 0.057（7 窝能得到的最小值），没有达到学术上常用的 0.05 统计学显著性门槛。</p>
+<p>报告作者说明，这一结论仍需要后续进行严格的同期、盲法重复实验来验证。</p>
+<p>在人体临床阶段上：</p>
+<p>官方原话提到这些研究“大多仍是临床前”。目前展示的分子结果，都还停留在体外或小鼠阶段。</p>
+<p>Mithril 预计最早 2028 年底进入人体试验，并且前提是“候选分子在后续测试中继续站得住”；据 R&amp;D World 报道，其针对另一种肌营养不良的第二个项目最早要到 2029 年才可能进入试验阶段（待确认）。</p>
+<p>我认为，从体外分子的结合活性到人体内的吸收、分布、代谢、排泄与毒性（ADMET），过程充满不确定性。</p>
+<p>动物模型的信号属于早期探索结果，不能把它当成已经成型的药物。</p>
+<h3>3. 竞争格局：模型公司、AI 药企与大药厂</h3>
+<p>当前全球 AI 制药赛道呈现出不同阵营的竞争态势。</p>
+<p>底层的模型厂商方面：</p>
+<p>OpenAI 在 2026 年 4 月与跨国药企诺和诺德达成战略合作，并推出生命科学模型 GPT-Rosalind，客户包括安进、莫德纳等。</p>
+<p>就在 Anthropic 发布成果前一周的 2026 年 10 月 20 日，OpenAI 宣布收购了 Orchestra Bio，这是一个让人与 AI 智能体协同推进药物项目、追踪研究和时间线的平台。</p>
+<p>一周后，Anthropic 公布已收购 Mithril（据报道收购发生在 7 月，待确认）并开始参与做药。我的判断是，两家模型公司都在往“药物项目编排”这个方向走。</p>
+<p>原生与垂直 AI 药企阵营方面：</p>
+<p>港股上市的英矽智能（Insilico Medicine）走在临床前沿，由 AI 发现靶点、生成式 AI 设计分子的 TNIK 抑制剂 rentosertib，针对特发性肺纤维化的 III 期临床试验已于 2026 年 9 月 10 日完成首例患者给药，试验在中国 47 个临床中心开展，计划入组约 320 人、随访 52 周，目前该药仍处于在研状态，尚未正式获批。</p>
+<p>由 DeepMind 衍生出的 Isomorphic Labs，在 2025 年完成 6 亿美元首轮外部融资后，于 2026 年 5 月再次完成由 Thrive Capital 领投的 21 亿美元 B 轮融资。</p>
+<p>据路透社报道，其进入临床的时间表已从最初宣称的 2025 年底推迟至 2026 年底前；据 STAT/Boston Globe 2026 年 10 月的报道，其项目仍处于临床前阶段。</p>
+<p>另一家 AI 制药公司 Recursion 在 2024 年合并 Exscientia 之后，砍掉了 REC-2282、REC-994、REC-3964 等项目（见其 2025 年一季度财报），对管线进行了收缩和聚焦。</p>
+<p>算力厂商与传统大药厂的联合方面：</p>
+<p>2026 年 1 月，礼来与英伟达宣布共建 AI 联合实验室，5 年内最多投入 10 亿美元；礼来还通过 TuneLab 向生物科技伙伴提供药物发现模型。</p>
+<p>从这个格局可以看出，模型厂商在尝试切入药物研发的数字化工作流，而垂直 AI 药企则直面临床后期的实际检验。</p>
+<p>我的判断是：用 AI 做药的公司，同样要面对管线取舍和临床失败的风险，Recursion 砍项目就是一个例子。</p>
+<hr />
+<h2>三、方案：AI 制药目前可落地的模式，以及“一人+AI+外包网络”的适用边界</h2>
+<h3>1. 现实可落地的三大应用模式</h3>
+<p>结合上述行业案例，我认为大语言模型在新药研发中展现出三类可行的落地模式。</p>
+<figure><img src="img/mithril_fig12_claude_week.jpg" alt="Mithril 技术报告图 12：一个人 + Claude 的一周" loading="lazy"><figcaption>Mithril 技术报告图 12：一个人 + Claude 的一周<span class="sep">｜</span>来源：Anthropic 技术报告 PDF</figcaption><div class="trans"><b>中文翻译：</b>A 一周内，我们中的一人与 Claude 一起，把一份数据包变成覆盖五家外包实验室的统一计划：1 周（从交接到计划）；341 页（一份数据包，全部读完）；113 个构建（14×8 个臂加 1 个对照）；5 家 CRO（从生产到小鼠药效）。循环：①人带上下文提出请求 ②Claude 给出结论 ③可视化汇总 ④未发送草稿与标记点 ⑤由人决定 ⑥由人发出邮件 → 回复与数据。B Claude 回答中位数 96 秒，CRO 为 8.5 小时（96 秒得到初步结论；7 分 53 秒从 341 页到可视化汇总）。C 11 个问题在 4 个工作日内全部处理（9 个书面确定，2 个留给实验）。D 一次人工裁决把计划从 113 个改为 89 个构建（质疑→27 秒后 Claude 辩护→裁决；4 分 5 秒后计划修改完成；共 7 分 36 秒）。E 我们保留了草稿邮件中关于对照实验的建议。十封草稿 4,938 词，发出时 3,409 词；起草 17 封，由人发出 12 封，标记 41 个待确认点。</div></figure>
+
+<p>一是“流程编排与任务并行化”。</p>
+<p>药企同时和多家外部 CRO 打交道，大量时间耗在来回沟通和等待上。Mithril 的数据里，CRO 首次回复的中位时间是 8.5 小时。</p>
+<p>大模型作为调度工具，能在几分钟内提取数据、起草邮件、标出待决事项，帮助原本串行的研发流程更高效地并行运转。</p>
+<p>二是“专业文书处理与监管申报协同”。</p>
+<p>新药研发有大量的专业文书，包括实验记录、质量标准和监管申报资料。</p>
+<p>Enveda 的实践证明，大模型在处理长文本、核对跨文档数据、排查申报疏漏上能够提高效率，减少科学家花费在案头文书上的时间。</p>
+<p>三是“算法与实验结合下的分子定向设计与筛选”。</p>
+<p>在 BigHat 和 Generate 的案例中，AI 的设计与实验数据保持同步，BigHat 还把 Claude 直接接入了实验数据系统。</p>
+<p>模型协助重新分析实验数据、提出新指标，帮助科学家在结合力、耐热溶解性、结块速度等参数上进行优化。</p>
+<p>Cody Tranbarger 在文章中提到，比起“压缩时间线”，他认为编排与并行化是眼下相对容易实现的目标。</p>
+<p>我认同这一务实看法，现阶段大模型产生直接实用价值的落脚点，主要是作为研发环节中的组织工具。</p>
+<h3>2. “一人 + AI + 外包网络”靠什么跑通，边界在哪</h3>
+<p>Mithril 展示的“单人推进临床前”做法很有参考价值，但也需要理清它背后的支撑条件。</p>
+<p>这种模式能够走通，依赖三个基础条件。</p>
+<p>一是操盘手和顾问。操盘手自己要有扎实的生物学判断，能识别模型的错误；背后还有 8 位付费顾问。</p>
+<p>二是成熟的外包实验室（CRO）网络。合同、物流和实验交给 11 家外部实验室，Claude 帮忙把这些环节组织起来。</p>
+<p>三是所选疾病比较特殊。</p>
+<p>LAMA2-CMD 属于单基因遗传缺陷罕见病，致病机理在分子生物学上相对明确：患儿缺少层粘连蛋白 α2（laminin-α2），肌纤维外面的基底膜锚不住肌细胞膜。</p>
+<p>患者肌肉会多产生一种替补蛋白 laminin-α4，但它几乎抓不住细胞膜。Mithril 设计的双抗一头抓 laminin-α4，一头抓细胞膜上的 β-dystroglycan，用类似“卡扣”的方式把替补蛋白固定回去。我的判断是，这种“物理锚定”思路机制相对清楚，不涉及复杂的多靶点信号调控。</p>
+<p>根据 BIO 的统计报告，罕见病领域药物从 I 期临床到获批的总体成功率约为 17.0%，高于全行业平均的 7.9%。</p>
+<p>我认为，这类微型研发团队模式比较适合用于“机理明确、靶点单一、有标准化动物模型”的罕见病早期项目。</p>
+<p>如果把这套模式直接套用到实体瘤、阿尔茨海默病或代谢类常见慢病领域，面对复杂的生物机制和庞大的人体试验规模，单纯依赖轻资产编排会遇到很大的困难。</p>
+<hr />
+<h2>四、风险：从实验室到临床的六类风险</h2>
+<h3>1. 科学证据与数据局限性风险</h3>
+<p>从科研严谨性来看，Mithril 的小鼠实验数据尚未经过学术同行评审。</p>
+<p>实验样本量偏小，而且没有采用随机化分组。</p>
+<p>数据按窝统计得出的 P 值为 0.057，在统计学标准上无法排除随机误差影响，需要严格的同期、盲法重复实验来确认。</p>
+<p>另外，1+1 构型没有测到效果，说明分子构型很关键；各组小鼠体重没有明显变化。</p>
+<p>在学术界和工业界，早期动物模型中表现不错但在后续复现中失败的管线并不少见。</p>
+<h3>2. AI 幻觉与执行层出错风险</h3>
+<p>在大模型辅助研发的过程中，执行层面的事实偏差或遗漏是现实的操作风险。</p>
+<p>Mithril 的技术报告复盘了与 Claude 协作中出现的 6 处典型错误。</p>
+<p>其中至少有 3 处错误随人工编辑后的邮件发给了外部实验室；比如有一处把每管材料量写少了，一天内、在灌装前得到了纠正。</p>
+<p>据 R&amp;D World 报道，还有两处针对生产数据的审阅错误，在长达 4 天多的时间里研究人员没有发现。</p>
+<p>医药研发对容错率要求很高，试剂浓度、离心参数或质控标准的微小偏差，一旦进入实验，就可能浪费材料与时间，甚至影响整批数据的有效性。</p>
+<h3>3. 商业模式与估值叙事风险</h3>
+<p>目前 Anthropic 对 Mithril 的收购金额没有公开，外界对“一人公司值多少钱”的猜测缺乏财务依据。</p>
+<p>我的判断是，行业评估 AI 制药的标准正在向临床数据靠拢。</p>
+<p>Recursion 在合并 Exscientia 后削减了多个项目，Isomorphic Labs 的临床推进时间表也有所推迟。</p>
+<p>我认为，投资者和药企会更关注临床管线的实际推进和数据表现，“AI 能设计多少个分子”这类指标的说服力在下降。</p>
+<h3>4. 罕见病样本外推风险</h3>
+<p>罕见病因为病因相对明确、缺乏有效药物，研发逻辑在生物学层面往往相对聚焦。</p>
+<p>罕见病药物开发 17.0% 的历史临床成功率，是全行业基准的两倍以上。</p>
+<p>如果把 Mithril 在肌营养不良单一项目上的轻资产推进节奏，推演成所有制药领域的常态，容易产生样本偏差。</p>
+<p>面对涉及人体多系统、靶点复杂且需要数千人长期随访的常见慢病，微型团队即使借助 AI 编排，也需要面对庞大的临床运营和安全性验证需求。</p>
+<h3>5. 监管审批与合规风险</h3>
+<p>目前全球药品监管机构对 AI 在医药研发中的应用持审慎态度。</p>
+<p>美国 FDA 于 2025 年 1 月发布的《用 AI 支持药品和生物制品监管决策的考虑》属于征求意见草案，不具备法律约束力。</p>
+<p>FDA 与欧洲 EMA 于 2026 年 1 月联合制定的良好 AI 实践原则，同样属于指导性框架。</p>
+<p>我的理解是，监管机构审查临床试验申请（IND）等资料时，关注的是扎实的生物学依据、工艺验证和可追溯的原始数据。</p>
+<p>大模型推断中的不透明性，不能替代法规要求的质量与药效检验程序。</p>
+<h3>6. 生物安全与两用风险</h3>
+<p>随着通用模型在蛋白质构象预测、抗体优化以及胞内受体改造上的能力提升，技术的“两用性”（既可用于研发药物，也有被用于设计危险物质的可能）是行业需要重视的问题（作者判断）。</p>
+<p>官方博客提到了 Claude Science、科研额度、生命科学验证计划等支持项目；这次发布中具体的生物安全措施，本文没有核实（待确认）。</p>
+<p>我认为，当模型能够批量设计抗体和蛋白时，如何建立有效的防范机制，是模型公司需要面对的合规要求。</p>
+<hr />
+<h2>五、行动建议：写给四类读者</h2>
+<h3>1. 给普通读者与罕见病患者家属</h3>
+<p>第一，理性看待技术进展的新闻，不把早期探索当成“现成新药”。</p>
+<p>生命科学有其严谨的规律，从动物体内看到肌力改善信号，到经过 I 期、II 期、III 期人体试验并获批，通常需要数年时间。</p>
+<p>即便这次进展较快的管线，在后续测试站得住脚的前提下，最快也要到 2028 年底才可能启动人体试验，不要轻信网络上夸大的宣传。</p>
+<p>第二，通过正规渠道获取临床研究动态。</p>
+<p>建议患者家属关注公开的临床试验登记平台（如 ClinicalTrials.gov、国家药监局药物临床试验登记与信息公示平台），以及正规罕见病公益组织发布的消息，了解合规的试验招募信息。</p>
+<h3>2. 给医药与生物科技从业者</h3>
+<p>第一，优先在“流程连接”和“重复耗时”的环节引入 AI 协作。</p>
+<p>生物科技公司不用急着投入大笔资金自建底层大模型，可以参考 Enveda 与 Mithril 的做法。</p>
+<p>把成熟的大模型用于 CMC 文书核对、申报材料起草、外包机构协同与数据整理中，帮科研人员节省文书处理的时间。</p>
+<p>第二，尝试“核心科学家 + AI 编排 + 专业 CRO”的灵活组织方式。</p>
+<p>对于机理明确、处于早期发现阶段的管线，团队可以组建精干小组，借助模型处理并行任务，减少前期的人力和管理成本。</p>
+<p>第三，建立人工交叉核对机制。</p>
+<p>需要注意 Mithril 报告中 3 处模型错误流转到外包实验室的实际情况。</p>
+<p>在涉及样品称量、试剂配比、实验步骤下发和质控归档等关键环节，建立双人核对和确认流程，防止模型偏差造成物料浪费。</p>
+<h3>3. 给 AI 从业者与创业者</h3>
+<p>第一，从“分子结构生成”向“端到端研发编排系统”延伸。</p>
+<p>分子设计只是药物研发的一部分，行业的普遍需求还包括如何把分散的实验数据、不同格式的文档和项目进度组织起来。</p>
+<p>开发能够辅助实验方案解析、多节点进度同步的工具，有明确的实际应用价值。</p>
+<p>第二，针对科研人机协同场景，做好容错和追溯功能。</p>
+<p>除了对话界面，生物医药工具可以加入“标出无依据推测”、数据异常提醒、版本修改记录和结构可视化等工程功能。</p>
+<p>第三，关注监管指引，建立数据审计记录。</p>
+<p>参考 FDA 与 EMA 的相关指引，在系统设计中保留操作日志和溯源记录，确保系统辅助形成的决策都有原始数据可以核查。</p>
+<h3>4. 给医疗健康领域投资者</h3>
+<p>第一，透过“生成分子数量”的表象，细看研发阶段的实际证据。</p>
+<p>在评估项目时，要把计算模拟筛选的指标和实际生物活性数据分开看。</p>
+<p>重点核实候选分子的体外结合动力学参数（如 KD 值）、体内的成药性（ADMET）、毒理表现，以及实验设计是否包含随机化和规范的统计检验。</p>
+<p>第二，合理评估初创药企的“资本效率”。</p>
+<p>可以关注善于利用工具优化前期研发开支的团队，但也要考虑到后期临床试验需要的资金支持。</p>
+<p>决定新药研发能否落地的关键仍然是人体临床数据的结果，算法工具带来的效率提升，不等于临床试验成功率能直接成倍提高。</p>
+<hr />
+<p>在这场由 Anthropic 与多家机构共同推进的尝试中，AI 展现出了连接不同研发环节的能力。</p>
+<p>你认为在未来三到五年内，大模型最先带来实质性产业改变的，是生物学底层的“分子设计成功率”，还是商业运营维度的“新药研发团队组织形态”？</p>
+<p>欢迎在评论区说说你的判断。如果你身边有做医药或 AI 的朋友，也可以转给他们看看。</p>
+<hr />
+<p><strong>参考来源</strong>
+- Anthropic 官方发布：<a href="https://x.com/AnthropicAI/status/2115178675050307942" target="_blank" rel="noopener">https://x.com/AnthropicAI/status/2115178675050307942</a>
+- Anthropic 官方博客：<a href="https://www.anthropic.com/research/early-progress-drug-development" target="_blank" rel="noopener">https://www.anthropic.com/research/early-progress-drug-development</a>
+- Mithril 技术报告（未同行评审）：<a href="https://www-cdn.anthropic.com/52e1f5d50c47ca3818f56704c27cf19e59b62e77.pdf" target="_blank" rel="noopener">https://www-cdn.anthropic.com/52e1f5d50c47ca3818f56704c27cf19e59b62e77.pdf</a>
+- Divergence 预印本：<a href="https://divergencelabs.com/publications/ige-preprint.pdf" target="_blank" rel="noopener">https://divergencelabs.com/publications/ige-preprint.pdf</a>
+- Generate 合作研究：<a href="https://generatebiomedicines.com/publications/refactored-intracellular-domains-enhance-car-expression-and-function/" target="_blank" rel="noopener">https://generatebiomedicines.com/publications/refactored-intracellular-domains-enhance-car-expression-and-function/</a>
+- BigHat 合作报告：<a href="https://www.bighatbio.com/bighat-anthropic-collaboration-report-10-27-2026" target="_blank" rel="noopener">https://www.bighatbio.com/bighat-anthropic-collaboration-report-10-27-2026</a>
+- Enveda 合作成果：<a href="https://enveda.com/CMC-Document-Processor/" target="_blank" rel="noopener">https://enveda.com/CMC-Document-Processor/</a>
+- Cody Tranbarger 说明：<a href="https://x.com/Prof_Oak_/status/2115185849424048564" target="_blank" rel="noopener">https://x.com/Prof_Oak_/status/2115185849424048564</a>
+- Nathan C. Frey 说明：<a href="https://x.com/nc_frey/status/2115187081219846566" target="_blank" rel="noopener">https://x.com/nc_frey/status/2115187081219846566</a>
+- R&amp;D World 报道：<a href="https://www.rdworldonline.com/anthropic-acquires-mithril-medicine-one-person-biotech/" target="_blank" rel="noopener">https://www.rdworldonline.com/anthropic-acquires-mithril-medicine-one-person-biotech/</a>
+- The Next Web 报道：<a href="https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development" target="_blank" rel="noopener">https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development</a>
+- DiMasi 等（2016）研发成本研究：<a href="https://pubmed.ncbi.nlm.nih.gov/26928437/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/26928437/</a>
+- Wouters 等（2020，JAMA）：<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7054832/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC7054832/</a>
+- BIO 临床开发成功率报告（2021）：<a href="https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf" target="_blank" rel="noopener">https://go.bio.org/rs/490-EHZ-999/images/ClinicalDevelopmentSuccessRates2011_2020.pdf</a>
+- 英矽智能 III 期首例给药：<a href="https://insilico.com/news/isn1009261-insilico-medicine-doses-first-patient-genesis-ipf-3" target="_blank" rel="noopener">https://insilico.com/news/isn1009261-insilico-medicine-doses-first-patient-genesis-ipf-3</a>
+- Isomorphic Labs 融资公告：<a href="https://www.isomorphiclabs.com/press/isomorphic-labs-funding" target="_blank" rel="noopener">https://www.isomorphiclabs.com/press/isomorphic-labs-funding</a>
+- Reuters：Isomorphic 临床时间表推迟：<a href="https://www.reuters.com/business/healthcare-pharmaceuticals/google-backed-ai-drug-discovery-startup-isomorphic-labs-delays-clinical-trial-2026-01-20/" target="_blank" rel="noopener">https://www.reuters.com/business/healthcare-pharmaceuticals/google-backed-ai-drug-discovery-startup-isomorphic-labs-delays-clinical-trial-2026-01-20/</a>
+- OpenAI 收购 Orchestra Bio：<a href="https://openai.com/index/openai-to-acquire-orchestra-bio/" target="_blank" rel="noopener">https://openai.com/index/openai-to-acquire-orchestra-bio/</a>
+- Reuters：礼来与英伟达联合实验室：<a href="https://www.reuters.com/business/healthcare-pharmaceuticals/nvidia-eli-lilly-spend-1-billion-over-five-years-joint-research-lab-2026-01-12/" target="_blank" rel="noopener">https://www.reuters.com/business/healthcare-pharmaceuticals/nvidia-eli-lilly-spend-1-billion-over-five-years-joint-research-lab-2026-01-12/</a>
+- Recursion 2025 年一季度报告：<a href="https://www.sec.gov/Archives/edgar/data/1601830/000160183025000074/exhibit991-q0125.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1601830/000160183025000074/exhibit991-q0125.htm</a>
+- FDA AI 监管决策草案指南：<a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological" target="_blank" rel="noopener">https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-artificial-intelligence-support-regulatory-decision-making-drug-and-biological</a>
+- FDA/EMA 良好 AI 实践原则：<a href="https://www.fda.gov/media/189581/download" target="_blank" rel="noopener">https://www.fda.gov/media/189581/download</a></p></article>
+<footer class="ft">本页为公众号文章排版预览草稿，截图与图表版权归原作者/机构所有。</footer></main></body></html>
